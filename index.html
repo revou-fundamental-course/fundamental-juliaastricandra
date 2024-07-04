@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Portfolio Julia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="nav-container">
+        <div class="logo-icon"></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <!-- Ini Home Content -->
+        <section id="home" class="section-box">
+            <header>
+                <h1>Hi Julia, Welcome to Website</h1>
+            </header>
+            <article>
+                <p>Ini adalah website portofolio saya</p>
+                <div class="banner-container"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Ini Our Profile -->
+        <section id="our-profile" class="profile-wrapper section-box">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon profile-1"></div>
+                    <p>Profile 1</p>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon profile-2"></div>
+                    <p>Profile 2</p>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon profile-3"></div>
+                    <p>Profile 3</p>
+                </div>
+                <div class="divider"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Ini Message Us -->
+        <section id="message-us" class="section-box">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <article class="message-container">
+                <div class="form-container">
+                    <form id="message-form">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="dob">Tanggal Lahir:</label>
+                        <input type="date" id="dob" name="dob" required><br>
+                        <div class="gender-options">
+                            <span>Jenis Kelamin :</span>
+                            <div class="gender-option">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                                <label for="male">Laki-Laki</label>
+                            </div>
+                            <div class="gender-option">
+                                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+                        
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="output" class="output-container">
+                    <p><strong>Current time:</strong> <span id="output-time"></span></p>
+                    <p><strong>Nama:</strong> <span id="output-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="output-dob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="output-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="output-message"></span></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Julia Astri Candra Kusuma</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
