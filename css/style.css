@@ -118,23 +118,31 @@ nav > a {
 
 .gender-options {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.gender-options span {
+    margin-bottom: 10px;
+}
+
+.gender-option {
+    display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
-.gender-options span {
+.gender-option input {
     margin-right: 10px;
 }
 
-.gender-options .gender-option {
+.gender-option label {
+    width: 6000px; 
     display: flex;
     align-items: center;
-    margin-right: 20px; 
 }
 
-.gender-options input {
-    margin-right: 5px;
-}
+
 
 
 .output-container {
